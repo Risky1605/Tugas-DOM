@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* js toggle */
+.tampil {
+  opacity: 1 !important;
+}
+
+.pindah {
+  top: 0;
+  left: 0;
+}
+
+.menyala {
+  box-shadow: 0px 0px 10px 5px white;
+}
+
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* body style*/
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  gap: 20px;
+}
+
+/* navbar */
+nav {
+  padding: 20px;
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  color: black;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* contant */
+main {
+  width: 100%;
+  height: inherit;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  margin: 20px;
+  transition: 1s;
+  top: 40%;
+  left: 15%;
+}
+
+main section {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  margin: 50px 0px 50px 0px;
+  transition: 1s;
+}
+
+main section .imagebtn {
+  top: 100%;
+  padding: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main #jaya .imagebtn .image {
+  width: 80%;
+  height: 80%;
+  background-size: 380px;
+  background-position: center;
+  background-image: url(jaya.jpg);
+}
+
+main #dana .imagebtn .image {
+  width: 80%;
+  height: 80%;
+  background-size: 500px;
+  background-position: center;
+  background-image: url(dana.jpg);
+}
+
+main #risky .imagebtn .image {
+  width: 80%;
+  height: 80%;
+  background-size: 380px;
+  background-position: center;
+  background-image: url(risky.jpg);
+}
+
+main section .btn {
+  position: relative;
+  background-color: red;
+  display: flex;
+  border: 1px solid white;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 1s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+main section .btn .icon,
+main section .btn p {
+  color: inherit;
+  z-index: 1;
+}
+
+main section .btn div {
+  position: absolute;
+  width: 200%;
+  height: 800%;
+  background-color: white;
+  transform: rotate(130deg);
+  right: 60%;
+  bottom: 300%;
+  transition: 1s;
+  z-index: 0;
+}
+
+main section .btn:hover {
+  color: black;
+}
+
+main section .btn:hover > div {
+  right: -60%;
+  bottom: -50%;
+}
+
+main section .table {
+  transition: 1s;
+  margin: 20px 20px 20px -20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 59%;
+  opacity: 0;
+}
+
+/* border style */
+th,
+td {
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 15px;
+}
+
+main section .table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+main section .table .medsos {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+main section .table .medsos a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main section .table .ig {
+  background-color: blue;
+}
+
+main section .table .yt {
+  background-color: red;
+}
+
+main section .table .phone {
+  background-color: green;
+}
